@@ -25,13 +25,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Brand</a>
+                <a class="navbar-brand" href="/?page=basket">Basket</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                    <li class="active"><a href="/?page=home">Home <span class="sr-only">(current)</span></a></li>
                     <li data-toggle="modal" data-target="#myModal"><a href="#">Login</a></li>
                 </ul>
 
@@ -73,64 +73,8 @@
     </div>
 </div>
 
+<!--  888888888888888888888888888888888888888888888888 -->
 
-
-<div class="row">
-    <div class="col-xs-12 col-sm-3">
-        <p align="center"><img src="img/img.GP" alt="img" height="700" width="350" class="img-thumbnail"></p>
-        <p align="center"><b>Гарри Потерр</b> (часть1)</p>
-        <div class="btn-group btn-group-justified" role="group" >
-            <div class="btn-group" role="group">
-                <a href="more.php" type="button" class="btn btn-default">More</a>
-            </div>
-            <div class="btn-group" role="group">
-                <a href="#" type="button" class="btn btn-default" class="btn btn-success" ><b>Buy</b></a>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="col-xs-12 col-sm-3">
-        <p align="center"> <img src="img/img.2" alt="img"  height="700" width="350" class="img-thumbnail"></p>
-        <p align="center"><b>Гарри Потерр</b> (часть2)</p>
-        <div class="btn-group btn-group-justified" role="group" >
-            <div class="btn-group" role="group">
-                <a href="#" type="button" class="btn btn-default">More</a>
-            </div>
-            <div class="btn-group" role="group">
-                <a href="#" type="button" class="btn btn-default" class="btn btn-success" ><b>Buy</b></a>
-            </div>
-        </div>
-    </div>
-
-    <div class="clearfix visible-xs-block"></div>
-
-    <div class="col-xs-12 col-sm-3">
-        <p align="center"> <img src="img/img.GP" alt="img" height="700" width="350" class="img-thumbnail"></p>
-        <p align="center"><b>Гарри Потерр</b>(часть3)</p>
-        <div class="btn-group btn-group-justified" role="group" >
-            <div class="btn-group" role="group">
-                <a href="#" type="button" class="btn btn-default">More</a>
-            </div>
-            <div class="btn-group" role="group">
-                <a href="#" type="button" class="btn btn-default" class="btn btn-success" ><b>Buy</b></a>
-            </div>
-        </div>
-    </div>
-    <div class="col-xs-12 col-sm-3">
-        <p align="center">  <img src="img/img.2" alt="img"  height="700" width="350" class="img-thumbnail"></p>
-        <p align="center"><b>Гарри Потерр</b> (часть4)</p>
-        <div class="btn-group btn-group-justified" role="group" >
-            <div class="btn-group" role="group">
-                <a href="#" type="button" class="btn btn-default">More</a>
-            </div>
-            <div class="btn-group" role="group">
-                <a href="#" type="button" class="btn btn-default" class="btn btn-success" ><b>Buy</b></a>
-            </div>
-        </div>
-    </div>
-</div>
 
 
 

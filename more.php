@@ -1,8 +1,18 @@
-<?php require_once ("header.php"); ?>
+<?php
 
-<p align="left">  <img src="img/img.2" alt="img"  height="800" width="400" class="img-thumbnail"></p>
+     $infotm=require ("inform.php");
+
+     foreach ($infotm as $k=>$v):?>
+
+         <?php if($_GET["id"]==$v["id"]): ?>
+
+<p align="left">  <img src="<?php echo $v["path_to_img"]?>" alt="img"  height="800" width="400" class="img-thumbnail" ></p>
 
 
-<?php require_once ("footer.php"); ?>
+<?php
+
+     endif;
+     endforeach;
+?>
 
 

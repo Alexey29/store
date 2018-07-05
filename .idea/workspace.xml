@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="447fc5f3-db0f-4b8b-a32f-537ff4377976" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/stor.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/img.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/img.GP" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/more.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stails.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/404.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basket.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inform.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content.php" beforeDir="false" afterPath="$PROJECT_DIR$/content.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/more.php" beforeDir="false" afterPath="$PROJECT_DIR$/more.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="38" column="44" lean-forward="true" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
+            <state relative-caret-position="45">
+              <caret line="27" column="55" lean-forward="true" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="59" />
               <folding>
                 <element signature="e#2742#2749#1#HTML" expanded="true" />
               </folding>
@@ -56,7 +52,47 @@
       </file>
       <file leaf-file-name="content.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content.php">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="404.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/404.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="basket.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/basket.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/home.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="24" column="48" lean-forward="true" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inform.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inform.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="40" column="21" lean-forward="true" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="21" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="stails.css" pinned="false" current-in-tab="false">
@@ -64,11 +100,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="more.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="more.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/more.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="120">
+              <caret line="8" column="118" lean-forward="true" selection-start-line="8" selection-start-column="118" selection-end-line="8" selection-end-column="118" />
             </state>
           </provider>
         </entry>
@@ -92,9 +128,13 @@
         <option value="$PROJECT_DIR$/footer.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/stails.css" />
-        <option value="$PROJECT_DIR$/content.php" />
         <option value="$PROJECT_DIR$/.php" />
+        <option value="$PROJECT_DIR$/404.php" />
+        <option value="$PROJECT_DIR$/basket.php" />
         <option value="$PROJECT_DIR$/header.php" />
+        <option value="$PROJECT_DIR$/home.php" />
+        <option value="$PROJECT_DIR$/content.php" />
+        <option value="$PROJECT_DIR$/inform.php" />
         <option value="$PROJECT_DIR$/more.php" />
       </list>
     </option>
@@ -111,11 +151,11 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="95" />
-    <option name="y" value="141" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="238" />
+    <option name="y" value="39" />
     <option name="width" value="1442" />
-    <option name="height" value="1012" />
+    <option name="height" value="1011" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -163,15 +203,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1530709500111</updated>
-      <workItem from="1530709505709" duration="10918000" />
+      <workItem from="1530709505709" duration="18024000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10918000" />
+    <option name="totallyTimeSpent" value="18024000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1613" height="1025" extended-state="6" />
+    <frame x="67" y="25" width="1613" height="1025" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.13639182" />
@@ -223,23 +263,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/more.php">
+    <entry file="file://$PROJECT_DIR$/404.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stails.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -252,11 +279,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="44" lean-forward="true" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
+        <state relative-caret-position="45">
+          <caret line="27" column="55" lean-forward="true" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="59" />
           <folding>
             <element signature="e#2742#2749#1#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basket.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="24" column="48" lean-forward="true" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inform.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="21" lean-forward="true" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stails.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/more.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="118" lean-forward="true" selection-start-line="8" selection-start-column="118" selection-end-line="8" selection-end-column="118" />
         </state>
       </provider>
     </entry>
