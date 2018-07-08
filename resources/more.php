@@ -1,6 +1,6 @@
 <?php
 
-     $infotm=require ("inform.php");
+     $infotm= require("inform.php");
 
      foreach ($infotm as $k=>$v):?>
 
