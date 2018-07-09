@@ -6,6 +6,9 @@
  * Time: 12:48
  */
 
+
+namespace Store\classes;
+
 class Application
 {
      private $url;

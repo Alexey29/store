@@ -6,7 +6,16 @@
  * Time: 12:42
  */
 
-class ControllerHome
+namespace Store\classes;
+
+class ConrtollerHome
 {
-    
+
+
+
+    function  __construct($action){
+
+    }
+
+
 }
