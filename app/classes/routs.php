@@ -1,15 +1,15 @@
 <?php
 return array (
     "/"=>array(
-        "controller"=>"ControllerHome",
+        "controller"=>"ControllerPages",
         "action"=>"home"
     ),
     "basket"=>array(
-        "controller"=>"BasketR",
+        "controller"=>"ControllerPages",
         "action"=>"basket"
     ),
     "more"=>array(
-        "controller"=>"MoreR",
+        "controller"=>"ControllerPages",
         "action"=>"more"
     )
 );

@@ -27,7 +27,8 @@ class Routers
          $actionName = $mas["action"];
 
 
-         $obj = new $controllerName($actionName);
+         $obj = new $controllerName();
+         $obj->$actionName();
 
      }
 
