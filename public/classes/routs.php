@@ -1,7 +1,7 @@
 <?php
 return array (
-    "/"=>array(
-        "controller"=>"ControllerPages",
+    ""=>array(
+        "controller"=>"classes\ControllerPages",
         "action"=>"home"
     ),
     "basket"=>array(
