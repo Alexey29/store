@@ -11,10 +11,14 @@ namespace classes;
 
 class ModelHome
 {
+
+    private $information;
+
     public function __construct()
     {
-        echo "MODEL";
-        require_once "resurses/header.php";
+//        echo "MODEL";
+        $this->information = require("resurses/inform.php");
+        $obj = new ViewHome($this->information);
     }
 
 }

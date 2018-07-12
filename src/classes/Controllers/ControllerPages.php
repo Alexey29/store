@@ -6,7 +6,10 @@
  * Time: 12:42
  */
 
+
 namespace classes;
+
+
 
 class ControllerPages
 {
@@ -16,11 +19,17 @@ class ControllerPages
     }
 
     public function home(){
-        echo "Hi!";
+//        echo "Hi!";
         $obj = new ModelHome();
+    }
 
+    public  function basket(){
+//        echo" action basket";
+        $obj = new ModelBasket();
+    }
 
-
+    public  function more(){
+        $obj = new ModelMore();
     }
 
 

@@ -29,7 +29,7 @@ return array(
         "pat"=>"3",
         "content"=>"about Gr",
         "path_to_img"=>"img/img.2"
-),
+    ),
 
     array(
          "id"=>"4",
@@ -38,5 +38,32 @@ return array(
          "name_book"=>"Garri Potter",
          "pat"=>"4",
          "content"=>"about Gr",
-         "path_to_img"=>"img/img.2")
+         "path_to_img"=>"img/img.2"),
+
+    array(
+            "id"=>"5",
+            "count_page"=>"500",
+            "author"=>"name author",
+            "name_book"=>"Garri Potter",
+            "pat"=>"4",
+            "content"=>"about Gr",
+            "path_to_img"=>"img/img.2"),
+
+    array(
+            "id"=>"6",
+            "count_page"=>"500",
+            "author"=>"name author",
+            "name_book"=>"Garri Potter",
+            "pat"=>"4",
+            "content"=>"about Gr",
+            "path_to_img"=>"img/img.2"),
+
+    array(
+            "id"=>"7",
+            "count_page"=>"500",
+            "author"=>"name author",
+            "name_book"=>"Garri Potter",
+            "pat"=>"4",
+            "content"=>"about Gr",
+            "path_to_img"=>"img/img.2")
 );

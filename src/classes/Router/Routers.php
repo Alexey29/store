@@ -19,21 +19,23 @@ class Routers
      {
          $this->routes= require("routs.php");
          $this->url = $_SERVER["REQUEST_URI"];
-         var_dump($_SERVER['REQUEST_URI']);
+//         var_dump($_SERVER['REQUEST_URI']);
      }
 
 
      function run(){
          $mas = $this->GetR();
 
-         var_dump($mas);
+//         var_dump($mas);
 
          $controllerName = $mas["controller"];
          $actionName = $mas["action"];
 
-
+         var_dump($_GET["id"]);
          $obj = new $controllerName();
          $obj->$actionName();
+
+
      }
 
 
@@ -41,10 +43,10 @@ class Routers
 
          $str = explode("/",$this->url);
          $str = $str[1];
-         var_dump($str);
+//         var_dump($str);
          $s = explode("?",$str);
          echo "<br>";
-         var_dump($s);
+//         var_dump($s);
          echo"<br>";
 
          foreach ($this->routes as $k=>$v){

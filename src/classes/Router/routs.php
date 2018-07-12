@@ -5,11 +5,11 @@ return array (
         "action"=>"home"
     ),
     "basket"=>array(
-        "controller"=>"ControllerPages",
+        "controller"=>"classes\ControllerPages",
         "action"=>"basket"
     ),
     "more"=>array(
-        "controller"=>"ControllerPages",
+        "controller"=>"classes\ControllerPages",
         "action"=>"more"
     )
 );
