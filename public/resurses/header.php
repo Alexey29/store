@@ -42,38 +42,65 @@
     </nav>
 </header>
 
-
+<form class="form-horizontal" method="post" action="login">
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                <h4 class="modal-title" id="myModalLabel">Enter your data</h4>
             </div>
-            <div class="modal-body">
 
-                <div class="input-group">
-                    <span class="input-group-addon" id="sizing-addon2">@</span>
-                    <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon2">
+<!--            <div class="modal-body">-->
+<!---->
+<!--                <div class="input-group">-->
+<!--                    <span class="input-group-addon" id="sizing-addon2">@</span>-->
+<!--                    <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon2">-->
+<!---->
+<!--                </div>-->
+<!---->
+<!--                <br>-->
+<!---->
+<!--                <div class="input-group">-->
+<!--                    <span class="input-group-addon" id="sizing-addon2"></span>-->
+<!--                    <input type="text" class="form-control" placeholder="Password" aria-describedby="sizing-addon2">-->
+<!--                </div>-->
+<!---->
+<!--            </div>-->
 
+
+
+<br>
+            <br>
+
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                    </div>
+                </div>
+            <br>
+                <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="pass" class="form-control" id="inputPassword3" placeholder="Password" value=""">
+                    </div>
                 </div>
 
-                <br>
+<br>
+            <br>
 
-                <div class="input-group">
-                    <span class="input-group-addon" id="sizing-addon2"></span>
-                    <input type="text" class="form-control" placeholder="Password" aria-describedby="sizing-addon2">
-                </div>
 
-            </div>
+
+
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Login</button>
+                <button type="submit" class="btn btn-primary">Login</button>
             </div>
         </div>
     </div>
 </div>
-
+</form>
 <!--  888888888888888888888888888888888888888888888888 -->
 
 

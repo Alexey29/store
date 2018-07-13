@@ -28,8 +28,18 @@ class ControllerPages
         $obj = new ModelBasket();
     }
 
-    public  function more(){
+    public  function more()
+    {
         $obj = new ModelMore();
+
+    }
+
+    public  function login(){
+        echo"login";
+    }
+
+    public  function PageNotFound(){
+        require_once "resurses/404.php";
     }
 
 

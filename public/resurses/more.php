@@ -1,14 +1,8 @@
-<?php
-//
-//     $infotm= require("inform.php");
-//
-//     foreach ($infotm as $k=>$v):?>
-<!---->
-<!--         --><?php //if($_GET["id"]==$v["id"]): ?>
+
 
 <p align="left">  <img class="leftimg" src="<?php echo $information["path_to_img"]?>" alt="img"  height="800" width="400" class="img-thumbnail" ></p>
 
-<!--<img src="--><?php //echo $information["path_to_img"]?><!--" alt="..." class="img-thumbnail">-->
+
 
 <h1 align="center"> <?php echo $information["name_book"] ?></h1>
 
@@ -25,10 +19,13 @@
     <br>
     <dt>Book review:</dt>
     <dd><?php echo $information["content"] ?></dd>
+    <br>
+    <dt>Book price:</dt>
+    <dd><?php echo $information["book_price"] ?></dd>
 
 </dl>
 </p>
-<!--<h1 align="center"> HI!</h1>-->
+
 
 <?php
 //
