@@ -33,7 +33,18 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="/">Home <span class="sr-only">(current)</span></a></li>
+                    <?php
+                    if(!$login): ?>
                     <li data-toggle="modal" data-target="#myModal"><a href="#">Login</a></li>
+                    <?php endif;
+                    if($login):
+                    ?>
+                    <li data-toggle="modal" ><a href="/logout">Logout</a></li>
+                    <li>Welcome, <?php echo $_SESSION["userName"]?><li>
+                    <?php
+                    endif;
+                    ?>
+
                 </ul>
 
 
@@ -76,14 +87,14 @@
                 <div class="form-group">
                     <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
                     <div class="col-sm-10">
-                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email" name="email">
                     </div>
                 </div>
             <br>
                 <div class="form-group">
                     <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
                     <div class="col-sm-10">
-                        <input type="text" name="pass" class="form-control" id="inputPassword3" placeholder="Password" value=""">
+                        <input type="text" class="form-control" id="inputPassword3" placeholder="Password" name="password" value=""">
                     </div>
                 </div>
 

@@ -14,7 +14,19 @@ class ModelBasket{
     public function __construct()
     {
 //        echo " Model basket ";
-        $obj = new ViewBasket();
+//        $obj = new ViewBasket();
+    }
+
+    public function isLogin(){
+        $ses = new \Session();
+        if ($ses->cookieExists()) {
+            $ses->start();
+            if(!(empty($_SESSION["userName"]))){
+                return true;
+            }
+        }
+        return false;
+
     }
 
 }

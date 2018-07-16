@@ -13,11 +13,14 @@ class ViewMore
 {
     public $information;
 
-    public function __construct($information)
+    public function __construct($information,$login)
     {
+        require_once "resurses/header.php";
 //        echo "view more";
-        $this->information=$information;
+//        $this->information=$information;
         require_once "resurses/more.php";
+
+        require_once("resurses/footer.php");
     }
 
 }

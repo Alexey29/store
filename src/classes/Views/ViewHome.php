@@ -13,11 +13,14 @@ class ViewHome
 {
     private $information;
 
-    public function __construct($information)
+    public function __construct($information,$login )
     {
-        $this->information=$information;
+        require_once "resurses/header.php";
+//        $this->information=$information;
 //        echo"!!!!!!!!!!!!!!!!!!!!!!1";
         require_once "resurses/home.php";
+
+        require_once("resurses/footer.php");
     }
 
 }

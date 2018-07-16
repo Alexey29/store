@@ -11,25 +11,36 @@
 //use Monolog\Logger;
 //use Store\classes\ConrtollerPages;?>
 
-<?php require_once "resurses/header.php";?>
+<?php //require_once "resurses/header.php";?>
 
 
 <?php
 
 require_once "../src/classes/Router/Routers.php";
-require_once "../src/classes/Controllers/ControllerPages.php";
+require_once "../src/classes/Authorization/Authorization.php";
+require_once "../src/classes/Session/Session.php";
 
 
+require_once "../src/classes/Controllers/ControllerHome.php";
 require_once "../src/classes/Models/ModelHome.php";
 require_once "../src/classes/Views/ViewHome.php";
 
-
+require_once "../src/classes/Controllers/ControllerBasket.php";
 require_once "../src/classes/Models/ModelBasket.php";
 require_once "../src/classes/Views/ViewBasket.php";
 
-
+require_once "../src/classes/Controllers/ControllerMore.php";
 require_once "../src/classes/Models/ModelMore.php";
 require_once "../src/classes/Views/ViewMore.php";
+
+require_once "../src/classes/Controllers/ControllerLogin.php";
+require_once "../src/classes/Models/ModelLogin.php";
+
+require_once "../src/classes/Controllers/ControllerPageNotFound.php";
+require_once "../src/classes/Views/ViewPageNotFound.php";
+
+require_once "../src/classes/Controllers/ControllerLogout.php";
+require_once "../src/classes/Models/ModelLogout.php";
 
 
 //use classes\ControllerPages;
@@ -44,6 +55,6 @@ $obj->run();
 
 ?>
 
-<?php require_once("resurses/footer.php"); ?>
+<?php //require_once("resurses/footer.php"); ?>
 
 

@@ -11,22 +11,35 @@ namespace classes;
 
 class ModelMore
 {
-    public $information;
+//    public $information;
 
     public function __construct()
     {
-        $this->getinformation();
-        $obj = new ViewMore($this->information);
+//        $this->getinformation();
+//        $obj = new ViewMore($this->information);
 
     }
 
-    public function getinformation(){
-        $this->information =require_once ("resurses/inform.php");
-        foreach ($this->information as $k=>$v){
+
+    public function dbinformation(){
+        $information = require_once ("resurses/inform.php");
+        foreach ($information as $k=>$v){
             if($_GET["id"]==$v["id"]){
-                $this->information = $v;
+                return $v;
             }
         }
+    }
+
+    public function isLogin(){
+        $ses = new \Session();
+        if ($ses->cookieExists()) {
+            $ses->start();
+            if(!(empty($_SESSION["userName"]))){
+                return true;
+            }
+        }
+        return false;
+
     }
 
 

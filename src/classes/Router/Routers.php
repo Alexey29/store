@@ -30,19 +30,19 @@ class Routers
          var_dump($mas);
 
          if($mas==null){
-//             echo "Page not found!";
-             $obj = new ControllerPages();
+             echo "Page not found!";
+             $obj = new ControllerPageNotFound();
              $obj->PageNotFound();
 
          }else {
              if ($mas["action"] == "more" && $_GET["id"] == null) {
-                 $obj = new ControllerPages();
+                 $obj = new ControllerPageNotFound();
                  $obj->PageNotFound();
              } else {
                  $controllerName = $mas["controller"];
                  $actionName = $mas["action"];
 
-                 var_dump($_GET["id"]);
+//                 var_dump($_GET["id"]);
                  $obj = new $controllerName();
                  $obj->$actionName();
              }

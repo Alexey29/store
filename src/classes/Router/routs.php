@@ -1,19 +1,23 @@
 <?php
 return array (
     ""=>array(
-        "controller"=>"classes\ControllerPages",
+        "controller"=>"classes\ControllerHome",
         "action"=>"home"
     ),
     "basket"=>array(
-        "controller"=>"classes\ControllerPages",
+        "controller"=>"classes\ControllerBasket",
         "action"=>"basket"
     ),
     "more"=>array(
-        "controller"=>"classes\ControllerPages",
+        "controller"=>"classes\ControllerMore",
         "action"=>"more"
     ),
     "login"=>array(
-        "controller"=>"classes\ControllerPages",
+        "controller"=>"classes\ControllerLogin",
         "action"=>"login"
+    ),
+    "logout"=>array(
+        "controller"=>"classes\ControllerLogout",
+        "action"=>"logout"
     )
 );

@@ -16,9 +16,31 @@ class ModelHome
 
     public function __construct()
     {
-//        echo "MODEL";
+
+    }
+
+    public function dbInformation(){
         $this->information = require("resurses/inform.php");
-        $obj = new ViewHome($this->information);
+    }
+
+    public function isLogin(){
+        $ses = new \Session();
+        if ($ses->cookieExists()) {
+            $ses->start();
+            if(!(empty($_SESSION["userName"]))){
+                return true;
+            }
+        }
+        return false;
+
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInformation()
+    {
+        return $this->information;
     }
 
 }
