@@ -12,7 +12,7 @@ namespace src\classes\ActiveRecord;
 class DB
 {
 
-    private $pdo;
+    protected $pdo;
 
     public function connectToDB()
     {
@@ -20,8 +20,8 @@ class DB
             $this->pdo = new \PDO("mysql:dbname=STORE_DB;host=localhost", "SERBIN", "SERBIN29");
         }catch (\PDOException $e){
             echo "Error:". $e->getMessage();
+            echo "!!!!!!!!!!!!!!!!!!!!!!11";
         }
-        return $this->pdo;
     }
 
     public function doQuery($sql){
@@ -30,6 +30,7 @@ class DB
 
     public function getQuery($sql)
     {
+
         $result = $this->pdo->query($sql);
         return $result;
     }

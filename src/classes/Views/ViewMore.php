@@ -20,7 +20,7 @@ class ViewMore
 //        $this->information=$information;
         require_once "resurses/more.php";
 
-        require_once("resurses/footer.php");
+        require_once "resurses/footer.php";
     }
 
 }

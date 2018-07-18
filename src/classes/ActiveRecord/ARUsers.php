@@ -22,6 +22,7 @@ class ARUsers extends ActiveRecord
     public function __construct($tableName)
     {
         $this->tableName = $tableName;
+        $this->connectToDB();
     }
 
     public function setId($id){

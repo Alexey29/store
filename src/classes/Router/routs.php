@@ -19,5 +19,9 @@ return array (
     "logout"=>array(
         "controller"=>"classes\ControllerLogout",
         "action"=>"logout"
+    ),
+    "registration"=>array(
+        "controller"=>"classes\ControllerRegistration",
+        "action"=>"registration"
     )
 );

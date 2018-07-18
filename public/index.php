@@ -42,6 +42,15 @@ require_once "../src/classes/Views/ViewPageNotFound.php";
 require_once "../src/classes/Controllers/ControllerLogout.php";
 require_once "../src/classes/Models/ModelLogout.php";
 
+require_once "../src/classes/ActiveRecord/ActiveRecord.php";
+require_once "../src/classes/ActiveRecord/ARUsers.php";
+require_once "../src/classes/ActiveRecord/ARBooks.php";
+require_once "../src/classes/ActiveRecord/ARAuthors.php";
+require_once "../src/classes/ActiveRecord/ARBook_authors.php";
+
+//require "../src/classes/ActiveRecord/DB.php";
+
+
 
 //use classes\ControllerPages;
 use classes\Routers;

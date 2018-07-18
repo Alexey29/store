@@ -35,11 +35,11 @@ foreach ($information as $k=>$v):
 
     <div class="col-sm-3 col-md-6">
         <div class="thumbnail">
-            <img class="sizeimg" src="<?php echo $v["path_to_img"]?>" alt="img">
+            <img class="sizeimg" src="<?php echo $v["route_to_img"]?>" alt="img">
             <div class="caption">
-                <h3><?php echo $v["name_book"] ?></h3>
-                <p><?php echo $v["content"]?></p>
-                <p><a href="more?id=<?php echo $v["id"]?>" class="btn btn-primary" role="button">More</a> <a href="#" class="btn btn-default" role="button">Buy</a></p>
+                <h3><?php echo $v["name"] ?></h3>
+                <p><?php echo $v["review"]?></p>
+                <p><a href="more?id=<?php echo $v["id"]?>" class="btn btn-primary"  role="button">More</a> <a href="#" class="btn btn-success" role="button">Buy</a></p>
             </div>
         </div>
     </div>

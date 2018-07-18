@@ -6,7 +6,10 @@
  * Time: 15:12
  */
 
+
 namespace src\classes\ActiveRecord;
+
+require "../src/classes/ActiveRecord/DB.php";
 
 
 class ActiveRecord extends DB
@@ -27,7 +30,8 @@ class ActiveRecord extends DB
     }
 
     public function getFieldChecked($field,$checked_field,$value){
-        $sql ="SELECT ".$field." FROM ".$this->tableName." WHERE ".$checked_field." = ".$value;
+        $sql ="SELECT ".$field." FROM ".$this->tableName." WHERE ".$checked_field." = '".$value . "';";
+
         $result = $this->getQuery($sql);
         return $result;
 

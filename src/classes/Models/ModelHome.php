@@ -9,6 +9,8 @@
 namespace classes;
 
 
+use src\classes\ActiveRecord\ARBooks;
+
 class ModelHome
 {
 
@@ -20,7 +22,13 @@ class ModelHome
     }
 
     public function dbInformation(){
-        $this->information = require("resurses/inform.php");
+        $obj = new ARBooks("books");
+        $data =  $obj->getAll();
+//        var_dump($data);
+        $data = $data->fetchAll();
+//        var_dump($data);
+//        $this->information = require("resurses/inform.php");
+        $this->information = $data;
     }
 
     public function isLogin(){
