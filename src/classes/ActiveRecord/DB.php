@@ -25,12 +25,12 @@ class DB
     }
 
     public function doQuery($sql){
-        $this->pdo->query($sql);
+        var_dump($sql);
+       var_dump($this->pdo->query($sql));
     }
 
     public function getQuery($sql)
     {
-
         $result = $this->pdo->query($sql);
         return $result;
     }

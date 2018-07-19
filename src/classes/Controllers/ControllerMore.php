@@ -16,11 +16,18 @@ class ControllerMore
     {
         $obj_Model = new ModelMore();
         $information = $obj_Model->dbinformation();
+        $obj_Model->dbcomments();
+        $information_comments = $obj_Model->dbcomments();
         $login = $obj_Model->isLogin();
-        $obj_View = new ViewMore($information,$login);
+        $obj_View = new ViewMore($information,$login,$information_comments);
 
 
 
+    }
+
+    public function moreComment(){
+        $obj = new ModelMore();
+        $obj->moreComment();
     }
 
 }

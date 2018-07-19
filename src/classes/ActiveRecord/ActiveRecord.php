@@ -18,7 +18,7 @@ class ActiveRecord extends DB
 
     public function getAll(){
         $sql = "SELECT * FROM ";
-        $sql = $sql.$this->tableName;
+        $sql = $sql.$this->tableName.";";
         $result = $this->getQuery($sql);
         return $result;
     }

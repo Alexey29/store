@@ -14,10 +14,15 @@
     height: 600px;
     width: 450px;
     float:left;
-    margin: 20px 20px 20px 20px;
+    margin: 0px 20px 20px 20px;
 }
 
 .leftpos{
     float:left;
-    margin: 20px 220px 20px 20px;
+    margin: 20px 20px 20px 20px;
+}
+
+.imgsize{
+    height: 250px;
+    width: 180px;
 }

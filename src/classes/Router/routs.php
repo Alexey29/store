@@ -23,5 +23,30 @@ return array (
     "registration"=>array(
         "controller"=>"classes\ControllerRegistration",
         "action"=>"registration"
+    ),
+    "add_product"=>array(
+        "controller"=>"classes\ControllerAddProduct",
+        "action"=>"addProduct"
+    ),
+    "add_one"=>array(
+        "controller"=>"classes\ControllerAddProduct",
+        "action"=>"addOne"
+    ),
+    "remove_one"=>array(
+        "controller"=>"classes\ControllerAddProduct",
+        "action"=>"removeOne"
+    ),
+    "remove"=>array(
+        "controller"=>"classes\ControllerAddProduct",
+        "action"=>"remove"
+    ),
+    "remove_all"=>array(
+        "controller"=>"classes\ControllerAddProduct",
+        "action"=>"removeAll"
+    ),
+    "more_comment"=>array(
+        "controller"=>"classes\ControllerMore",
+        "action"=>"moreComment"
     )
+
 );

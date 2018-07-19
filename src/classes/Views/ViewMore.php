@@ -13,7 +13,7 @@ class ViewMore
 {
     public $information;
 
-    public function __construct($information,$login)
+    public function __construct($information,$login,$information_comments)
     {
         require_once "resurses/header.php";
 //        echo "view more";

@@ -42,7 +42,9 @@ class ARUsers extends ActiveRecord
     }
 
     public function addUser(){
-        $sql = "INSERT INTO ".$this->tableName." VALUES (".$this->userName.",".$this->email.",".$this->password.")" ;
+        $sql = "INSERT INTO ".$this->tableName."( name ,email,password".") VALUES ("."'".$this->userName."'".","."'".$this->email."'".","."'".$this->password."'".");" ;
+        var_dump($sql);
+        $this->doQuery($sql);
     }
 
 

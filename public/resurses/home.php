@@ -31,15 +31,16 @@ foreach ($information as $k=>$v):
 
 ?>
 
-
-
     <div class="col-sm-3 col-md-6">
         <div class="thumbnail">
             <img class="sizeimg" src="<?php echo $v["route_to_img"]?>" alt="img">
             <div class="caption">
                 <h3><?php echo $v["name"] ?></h3>
                 <p><?php echo $v["review"]?></p>
-                <p><a href="more?id=<?php echo $v["id"]?>" class="btn btn-primary"  role="button">More</a> <a href="#" class="btn btn-success" role="button">Buy</a></p>
+                <p><a href="more?id=<?php echo $v["id"]?>" class="btn btn-primary"  role="button">More</a>
+                    <?php if($login):?>
+                    <a href="add_product?id=<?php echo $v["id"]?>" class="btn btn-success" role="button">Add to basket</a></p>
+                <?php endif;?>
             </div>
         </div>
     </div>
