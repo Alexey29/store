@@ -104,10 +104,11 @@ class ModelMore
             $ses->start();
 
             $obj = new ARComments("comments");
-            $obj->setComment($_GET["id"], $_SESSION["userId"], $_POST["comment"]);
-//            header("Location: http://test1.local/more?id=".$_GET["id"]);
+            $comment = addslashes($_POST["comment"]);
+            $obj->setComment($_GET["id"], $_SESSION["userId"], $comment);
+            header("Location: http://test1.local/more?id=".$_GET["id"]);
         }else{
-//            header("Location: http://test1.local/more?id=".$_GET["id"]);
+            header("Location: http://test1.local/more?id=".$_GET["id"]);
         }
     }
 }
