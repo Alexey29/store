@@ -6,7 +6,7 @@
  * Time: 12:40
  */
 
-namespace src\mailer;
+namespace Store\mailer;
 
 
 class SendTransport

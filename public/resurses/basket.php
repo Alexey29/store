@@ -9,6 +9,8 @@
             <td >Batons</td>
         </tr>
         <?php
+        use Store\Classes\Session\Session;
+
         $obj = new Session();
         $obj->set("full_prise",0);
         if($obj->sessionExists()):
@@ -36,7 +38,7 @@
             </table>
         <h2 class="text-info">Full price: <?php echo $_SESSION["full_prise"]?></h2>
         <a href="remove_all" class="btn btn-primary btn-lg active" role="button">Remove All</a>
-        <a href="#" class="btn btn-success btn-lg active" role="button">Buy Books</a>
+        <a href="buy_books" class="btn btn-success btn-lg active" role="button">Buy Books</a>
         <?php
         endif;
         endif;

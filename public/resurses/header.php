@@ -2,11 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
@@ -43,13 +40,17 @@
                     if($login):
                     ?>
                     <li data-toggle="modal" ><a href="/logout">Logout</a></li>
-                    <li>Welcome, <?php echo $_SESSION["userName"]?><li>
                     <?php
                     endif;
                     ?>
 
                 </ul>
-
+                <?php
+                    if($login):
+                    ?>
+                        <h3 class="pading_distance" align="right"> Welcome, <?php echo $_SESSION["userName"]?></h3>
+                    <?php
+                    endif;  ?>
 
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->

@@ -1,0 +1,56 @@
+<?php
+return array (
+    ""=>array(
+        "controller"=>"Store\Classes\Controllers\ControllerHome",
+        "action"=>"home"
+    ),
+    "basket"=>array(
+        "controller"=>"Store\Classes\Controllers\ControllerBasket",
+        "action"=>"basket"
+    ),
+    "more"=>array(
+        "controller"=>"Store\Classes\Controllers\ControllerMore",
+        "action"=>"more"
+    ),
+    "login"=>array(
+        "controller"=>"Store\Classes\Controllers\ControllerLogin",
+        "action"=>"login"
+    ),
+    "logout"=>array(
+        "controller"=>"Store\Classes\Controllers\ControllerLogout",
+        "action"=>"logout"
+    ),
+    "registration"=>array(
+        "controller"=>"Store\Classes\Controllers\ControllerRegistration",
+        "action"=>"registration"
+    ),
+    "add_product"=>array(
+        "controller"=>"Store\Classes\Controllers\ControllerAddProduct",
+        "action"=>"addProduct"
+    ),
+    "add_one"=>array(
+        "controller"=>"Store\Classes\Controllers\ControllerAddProduct",
+        "action"=>"addOne"
+    ),
+    "remove_one"=>array(
+        "controller"=>"Store\Classes\Controllers\ControllerAddProduct",
+        "action"=>"removeOne"
+    ),
+    "remove"=>array(
+        "controller"=>"Store\Classes\Controllers\ControllerAddProduct",
+        "action"=>"remove"
+    ),
+    "remove_all"=>array(
+        "controller"=>"Store\Classes\Controllers\ControllerAddProduct",
+        "action"=>"removeAll"
+    ),
+    "more_comment"=>array(
+        "controller"=>"Store\Classes\Controllers\ControllerMore",
+        "action"=>"moreComment"
+    ),
+    "buy_books"=>array(
+        "controller"=>"Store\Classes\Controllers\ControllerBasket",
+        "action"=>"buy_books"
+    )
+
+);

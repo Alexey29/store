@@ -6,7 +6,7 @@
  * Time: 12:05
  */
 
-namespace src\mailer;
+namespace Store\mailer;
 
 
 class mailer
