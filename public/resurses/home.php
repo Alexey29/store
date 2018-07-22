@@ -1,26 +1,57 @@
 <?php
 
-$infor = require("inform.php");
+//$inform = require("inform.php");
+//
+//foreach ($information as $k=>$v):
+//
+//?>
+<!--<div class="row">-->
+<!--    <div class="col-xs-6 col-sm-3">-->
+<!--        <p align="center"><img src="../img/img.GP" alt="img" height="700" width="350" class="img-thumbnail"></p>-->
+<!--        <p align="center"><b>--><?php //echo $v["name_book"] ?><!--</b> (часть --><?php //echo $v["pat"] ?><!--)</p>-->
+<!--        <div class="btn-group btn-group-justified" role="group">-->
+<!--            <div class="btn-group" role="group">-->
+<!--                <a href="/?page=more&id=--><?php //echo $v["id"]?><!--" type= "button" class="btn btn-default">More</a>-->
+<!--            </div>-->
+<!--            <div class="btn-group" role="group">-->
+<!--                <a href="#" type="button" class="btn btn-default" class="btn btn-success"><b>Buy</b></a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    --><?php
+//    endforeach;
+//?>
 
-foreach ($infor as $k=>$v):
+<div class="intend">
+<div class="row">
+
+<?php
+
+foreach ($information as $k=>$v):
 
 ?>
-<div class="row">
-    <div class="col-xs-12 col-sm-3">
-        <p align="center"><img src="../public/img/img.GP" alt="img" height="700" width="350" class="img-thumbnail"></p>
-        <p align="center"><b><?php echo $v["name_book"] ?></b> (часть <?php echo $v["pat"] ?>)</p>
-        <div class="btn-group btn-group-justified" role="group">
-            <div class="btn-group" role="group">
-                <a href="/?page=more&id=<?php echo $v["id"] ?> type="button" class="btn btn-default">More</a>
-            </div>
-            <div class="btn-group" role="group">
-                <a href="#" type="button" class="btn btn-default" class="btn btn-success"><b>Buy</b></a>
+
+
+
+    <div class="col-sm-3 col-md-6">
+        <div class="thumbnail">
+            <img class="sizeimg" src="<?php echo $v["path_to_img"]?>" alt="img">
+            <div class="caption">
+                <h3><?php echo $v["name_book"] ?></h3>
+                <p><?php echo $v["content"]?></p>
+                <p><a href="more?id=<?php echo $v["id"]?>" class="btn btn-primary" role="button">More</a> <a href="#" class="btn btn-default" role="button">Buy</a></p>
             </div>
         </div>
     </div>
-    <?php
+
+
+<?php
     endforeach;
 ?>
+
+</div>
+</div>
+
 <!--    <div class="col-xs-12 col-sm-3">-->
 <!--        <p align="center"> <img src="img/img.2" alt="img"  height="700" width="350" class="img-thumbnail"></p>-->
 <!--        <p align="center"><b>Гарри Потерр</b> (часть2)</p>-->
@@ -60,4 +91,4 @@ foreach ($infor as $k=>$v):
 <!--            </div>-->
 <!--        </div>-->
 <!--    </div>-->
-</div>
+<!--</div>-->

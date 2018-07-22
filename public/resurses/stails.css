@@ -1,0 +1,18 @@
+.sizeimg{
+
+    height: 400px;
+    width: 300px;
+
+}
+
+.intend{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.leftimg {
+    height: 700px;
+    width: 450px;
+    float:left;
+    margin: 20px 20px 20px 20px;
+}
