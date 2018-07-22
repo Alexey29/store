@@ -16,30 +16,30 @@ class ControllerAddProduct
     public function addProduct(){
         $obj = new ModelAddProduct();
         $obj->addProduct();
-        header("Location: http://test1.local/basket");
+        header("Location: basket");
     }
 
     public function addOne(){
         $obj = new ModelAddProduct();
         $obj->addOne();
-        header("Location: http://test1.local/basket");
+        header("Location: basket");
     }
 
     public function removeOne(){
         $obj = new ModelAddProduct();
         $obj->removeOne();
-        header("Location: http://test1.local/basket");
+        header("Location: basket");
     }
 
     public function remove(){
         $obj = new ModelAddProduct();
         $obj->remove();
-        header("Location: http://test1.local/basket");
+        header("Location: basket");
     }
 
     public function removeAll(){
         $obj =new ModelAddProduct();
         $obj->removeAll();
-        header("Location: http://test1.local/basket");
+        header("Location: basket");
     }
 }

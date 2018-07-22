@@ -8,6 +8,7 @@
 
 namespace Store\Classes\Router;
 
+use Store\Classes\ActiveRecord\ARBooks;
 use Store\Classes\Controllers\ControllerPageNotFound;
 
 class Routers
@@ -25,24 +26,16 @@ class Routers
 
 
      function run(){
-         $mas = $this->GetR();
-
-
-         if($mas==null){
-             echo "Page not found!";
-             $obj = new ControllerPageNotFound();
-             $obj->PageNotFound();
-
+         $array = $this->GetR();
+         if($array==null){
+             $this->pageNotFound();
          }else {
-             if ($mas["action"] == "more" && $_GET["id"] == null) {
-                 $obj = new ControllerPageNotFound();
-                 $obj->PageNotFound();
+             if ($array["action"] == "more" && (!isset($_GET["id"]) || !$this->existBookId($_GET["id"]))) {
+                 $this->pageNotFound();
              } else {
-                 $controllerName = $mas["controller"];
-                 $actionName = $mas["action"];
-
+                 $controllerName = $array["controller"];
+                 $actionName = $array["action"];
                  $obj = new $controllerName();
-
                  $obj->$actionName();
              }
          }
@@ -53,19 +46,31 @@ class Routers
      function GetR(){
          $str = explode("/",$this->url);
          $str = $str[1];
-
          $s = explode("?",$str);
-         echo "<br>";
-
-         echo"<br>";
-
          foreach ($this->routes as $k=>$v){
              if($k==$s[0]){
                  return $v;
              }
          }
+         return null;
+     }
 
+     private function pageNotFound(){
+         $obj = new ControllerPageNotFound();
+         $obj->PageNotFound();
+     }
 
+     private function existBookId($id){
+         $obj = new ARBooks("books");
+         $ids = $obj->getField("id");
+         $ids = $ids->fetchAll();
+
+         foreach ($ids as $k=>$v){
+             if($v["id"] == $id){
+                 return true;
+             }
+         }
+         return false;
      }
 
 

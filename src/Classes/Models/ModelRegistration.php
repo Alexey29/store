@@ -33,10 +33,10 @@ class ModelRegistration
                 $obg->addUser();
 
             } else {
-                echo "This email already exist";
+                header("Location: /");
             }
         }else{
-            echo "input all data";
+            header("Location: /");
         }
 
     }
@@ -53,13 +53,11 @@ class ModelRegistration
     public function isTrueEmail(){
         $obj = new ARUsers("users");
         $emails = $obj->getField("email");
-//        var_dump($emails->fetch());
+
         $emails = $emails->fetchAll();
-        var_dump($emails);
+
         foreach ($emails as $values){
             if($values["email"] == $_POST["email"]){
-                var_dump($values["email"]);
-                var_dump($_POST["email"]);
 
                 return true;
             }

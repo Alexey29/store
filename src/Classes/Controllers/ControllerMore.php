@@ -27,9 +27,9 @@ class ControllerMore
 
     }
 
-    public function moreComment(){
+    public function addComment(){
         $obj = new ModelMore();
-        $obj->moreComment();
+        $obj->addComment();
     }
 
 }

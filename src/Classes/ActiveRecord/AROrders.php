@@ -20,7 +20,6 @@ class AROrders extends ActiveRecord
     public function addOrder($id_user){
         $sql = "INSERT INTO ".$this->tableName." (fk_user) VALUE ('".$id_user."');";
         $this->doQuery($sql);
-        var_dump($this->pdo->lastInsertId($this->tableName));
         return $this->pdo->lastInsertId($this->tableName);
     }
 

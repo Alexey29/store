@@ -13,9 +13,11 @@ class ViewBasket
 {
     public function __construct($login)
     {
-        require_once "resurses/header.php";
-        require_once "resurses/basket.php";
-        require_once "resurses/footer.php";
+        require_once "resources/header.php";
+
+        require_once "resources/basket.php";
+
+        require_once "resources/footer.php";
     }
 
 }

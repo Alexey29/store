@@ -29,7 +29,7 @@ class ModelLogin
             $this->getData();
             $this->login();
         }else{
-            echo"input all data!";
+            header("Location: /");
         }
     }
 
@@ -44,17 +44,15 @@ class ModelLogin
     public function isTrueEmail(){
         $obj = new ARUsers("users");
         $emails = $obj->getField("email");
-//        var_dump($emails->fetch());
+
         $emails = $emails->fetchAll();
-        var_dump($emails);
+
         $email = $_POST["email"];
         $email = strip_tags($email);
         $email = addslashes($email);
         foreach ($emails as $values){
             if($values["email"] == $email){
                 $this->email = $values["email"];
-//                var_dump($values["email"]);
-//                var_dump($_POST["email"]);
 
                 return true;
             }
@@ -66,7 +64,7 @@ class ModelLogin
         $obj = new ARUsers("users");
         $password = $obj->getFieldChecked("password","email",$this->email);
         $password = $password->fetch();
-        var_dump($password);
+
         $get_password = $_POST["password"];
         $get_password = strip_tags($get_password);
         $get_password = addslashes($get_password);
@@ -92,10 +90,10 @@ class ModelLogin
                 $userId = $userId->fetch();
                 $this->userId = $userId["id"];
             }else{
-                echo"wrong password";
+                header("Location: /");
             }
         }else{
-            echo"wrong email";
+            header("Location: /");
         }
     }
 
@@ -104,7 +102,7 @@ class ModelLogin
     public function login(){
         $obj = new Authorization();
         $obj->login($this->userName,$this->userId);
-        header("Location: http://test1.local/");
+        header("Location: /");
     }
 
 

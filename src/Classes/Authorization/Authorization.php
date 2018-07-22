@@ -21,20 +21,6 @@ class Authorization
 
     public function __construct()
     {
-//        $this->userName = $userName;
-//        $this->userId = $userId;
-//        $this->obj = new \Session();
-//
-//        if(!($this->obj->sessionExists())){
-//            echo " session start ";
-//            $this->obj->start();
-//        }
-//
-//        $this->obj->set("userName",$this->userName);
-//        $this->obj->set("userId",$this->userId);
-//        var_dump($_SESSION["userName"]);
-//        var_dump($_SESSION["userId"]);
-
     }
 
     public function login($userName,$userId){
@@ -49,9 +35,6 @@ class Authorization
 
         $this->obj->set("userName",$this->userName);
         $this->obj->set("userId",$this->userId);
-
-        var_dump($_SESSION["userName"]);
-        var_dump($_SESSION["userId"]);
 
     }
 

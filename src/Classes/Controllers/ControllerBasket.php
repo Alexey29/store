@@ -17,7 +17,6 @@ class ControllerBasket
 {
 
     public  function basket(){
-//        echo" action basket";
         $obj_Model = new ModelBasket();
         $login = $obj_Model->isLogin();
         $obj_View = new ViewBasket($login);
@@ -29,7 +28,7 @@ class ControllerBasket
         $obj->buy_books();
         $obj = new ModelAddProduct();
         $obj->removeAll();
-        header("Location: http://test1.local/basket");
+        header("Location: basket");
 
     }
 

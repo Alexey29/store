@@ -18,7 +18,7 @@ class ModelLogout
     public function logout(){
         $obj = new Authorization();
         $obj->logout();
-        header("Location: http://test1.local/");
+        header("Location: /");
 
     }
 }

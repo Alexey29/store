@@ -44,9 +44,9 @@ return array (
         "controller"=>"Store\Classes\Controllers\ControllerAddProduct",
         "action"=>"removeAll"
     ),
-    "more_comment"=>array(
+    "add_comment"=>array(
         "controller"=>"Store\Classes\Controllers\ControllerMore",
-        "action"=>"moreComment"
+        "action"=>"addComment"
     ),
     "buy_books"=>array(
         "controller"=>"Store\Classes\Controllers\ControllerBasket",

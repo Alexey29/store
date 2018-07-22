@@ -39,9 +39,9 @@ class ModelAddProduct
                     "price"=>$information["price"],
                     "route_to_img"=>$information["route_to_img"]
                 );
-//                var_dump($product);
+
                 $_SESSION["products"][] = $product;
-//                var_dump($_SESSION["products"]);
+
             }
         }else{
             $information = $this->getBookData();
@@ -52,12 +52,10 @@ class ModelAddProduct
                 "price"=>$information["price"],
                 "route_to_img"=>$information["route_to_img"]
             );
-//            var_dump($product);
+
             $_SESSION["products"][] = $product;
 
         }
-//        var_dump($_SESSION["products"]);
-//        $obj->destroy();
 
     }
 
@@ -65,7 +63,7 @@ class ModelAddProduct
         $obj_ARBooks = new ARBooks("books");
         $information = $obj_ARBooks->getFieldChecked("name,price,route_to_img","id",$_GET["id"]);
         $information = $information->fetch();
-//        var_dump($information);
+
         return $information;
     }
 

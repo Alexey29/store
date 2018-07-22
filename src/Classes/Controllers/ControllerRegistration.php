@@ -16,7 +16,7 @@ class ControllerRegistration
     public function registration(){
         $obj = new ModelRegistration();
         $obj->registration();
-        header("Location: http://test1.local/");
+        header("Location: /");
 
     }
 

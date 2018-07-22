@@ -42,6 +42,11 @@
         <?php
         endif;
         endif;
+        if(!($obj->contains("products"))):
+            ?>
+            <h1>Basket is empty!</h1>
+        <?php
+        endif;
         ?>
 
 </div>

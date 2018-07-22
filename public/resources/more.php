@@ -30,7 +30,7 @@
     <div class="col-xs-6 col-md-4">
 
 <?php if($login):?>
-    <form  method="post" action="more_comment?id=<?php echo $_GET["id"]?>">
+    <form  method="post" action="add_comment?id=<?php echo $_GET["id"]?>">
             <div class="form-group">
                 <label for="exampleInputEmail1">Yore comment:</label>
                 <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Comment" name="comment">

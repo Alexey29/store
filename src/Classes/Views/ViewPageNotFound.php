@@ -14,7 +14,7 @@ class ViewPageNotFound
 {
     public  function PageNotFound(){
 
-        require_once "resurses/404.php";
+        require_once "resources/404.php";
 
 
     }

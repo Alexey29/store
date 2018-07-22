@@ -17,15 +17,14 @@ class DB
     public function connectToDB()
     {
         try {
-            $this->pdo = new \PDO("mysql:dbname=STORE_DB;host=localhost", "SERBIN", "SERBIN29");
+            $this->pdo = new \PDO("mysql:dbname=store;host=localhost", "root", "");
         }catch (\PDOException $e){
             echo "Error:". $e->getMessage();
-            echo "!!!!!!!!!!!!!!!!!!!!!!11";
         }
     }
 
     public function doQuery($sql){
-       var_dump($this->pdo->query($sql));
+       $this->pdo->query($sql);
     }
 
     public function getQuery($sql)

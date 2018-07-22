@@ -15,11 +15,11 @@ class ViewMore
 
     public function __construct($information,$login,$information_comments)
     {
-        require_once "resurses/header.php";
+        require_once "resources/header.php";
 
-        require_once "resurses/more.php";
+        require_once "resources/more.php";
 
-        require_once "resurses/footer.php";
+        require_once "resources/footer.php";
     }
 
 }

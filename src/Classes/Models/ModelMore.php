@@ -18,7 +18,6 @@ use Store\Classes\Session\Session;
 
 class ModelMore
 {
-//    public $information;
 
     public function __construct()
     {
@@ -91,7 +90,7 @@ class ModelMore
 
     }
 
-    public function moreComment(){
+    public function addComment(){
         if(!(empty($_POST["comment"]))) {
             $ses = new Session();
             $ses->start();
@@ -100,9 +99,9 @@ class ModelMore
             $comment = addslashes($_POST["comment"]);
             $comment = strip_tags($comment);
             $obj->setComment($_GET["id"], $_SESSION["userId"], $comment);
-            header("Location: http://test1.local/more?id=".$_GET["id"]);
+            header("Location: more?id=".$_GET["id"]);
         }else{
-            header("Location: http://test1.local/more?id=".$_GET["id"]);
+            header("Location: more?id=".$_GET["id"]);
         }
     }
 }

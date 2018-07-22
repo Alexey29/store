@@ -15,11 +15,11 @@ class ViewHome
 
     public function __construct($information,$login )
     {
-        require_once "resurses/header.php";
+        require_once "resources/header.php";
 
-        require_once "resurses/home.php";
+        require_once "resources/home.php";
 
-        require_once "resurses/footer.php";
+        require_once "resources/footer.php";
     }
 
 }
