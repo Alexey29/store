@@ -6,18 +6,20 @@
  * Time: 10:12
  */
 
-namespace classes;
+namespace Store\Classes\Views;
 
 
 class ViewHome
 {
     private $information;
 
-    public function __construct($information)
+    public function __construct($information,$login )
     {
-        $this->information=$information;
-//        echo"!!!!!!!!!!!!!!!!!!!!!!1";
+        require_once "resurses/header.php";
+
         require_once "resurses/home.php";
+
+        require_once "resurses/footer.php";
     }
 
 }

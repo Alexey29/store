@@ -6,9 +6,9 @@
  * Time: 11:58
  */
 
-namespace classes;
+namespace Store\Classes\Router;
 
-
+use Store\Classes\Controllers\ControllerPageNotFound;
 
 class Routers
 {
@@ -21,29 +21,28 @@ class Routers
      {
          $this->routes= require("routs.php");
          $this->url = $_SERVER["REQUEST_URI"];
-//         var_dump($_SERVER['REQUEST_URI']);
      }
 
 
      function run(){
          $mas = $this->GetR();
-         var_dump($mas);
+
 
          if($mas==null){
-//             echo "Page not found!";
-             $obj = new ControllerPages();
+             echo "Page not found!";
+             $obj = new ControllerPageNotFound();
              $obj->PageNotFound();
 
          }else {
              if ($mas["action"] == "more" && $_GET["id"] == null) {
-                 $obj = new ControllerPages();
+                 $obj = new ControllerPageNotFound();
                  $obj->PageNotFound();
              } else {
                  $controllerName = $mas["controller"];
                  $actionName = $mas["action"];
 
-                 var_dump($_GET["id"]);
                  $obj = new $controllerName();
+
                  $obj->$actionName();
              }
          }
@@ -54,10 +53,10 @@ class Routers
      function GetR(){
          $str = explode("/",$this->url);
          $str = $str[1];
-         var_dump($str);
+
          $s = explode("?",$str);
          echo "<br>";
-         var_dump($s);
+
          echo"<br>";
 
          foreach ($this->routes as $k=>$v){
@@ -65,7 +64,7 @@ class Routers
                  return $v;
              }
          }
-//         throw new Exception("Page not found!");
+
 
      }
 

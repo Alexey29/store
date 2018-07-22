@@ -6,7 +6,7 @@
  * Time: 12:11
  */
 
-namespace src\mailer;
+namespace Store\mailer;
 
 
 class MailMessage
