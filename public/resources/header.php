@@ -93,7 +93,6 @@
     </div>
 </div>
 </form>
-<!--  888888888888888888888888888888888888888888888888 -->
 
 <form class="form-horizontal" method="post" action="registration">
     <div class="modal fade" id="myModal_2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
