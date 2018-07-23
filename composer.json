@@ -1,0 +1,15 @@
+{
+    "name": "vendor/name",
+    "authors": [
+        {
+            "name": "alexey",
+            "email": "alexey.serbi@mail.com"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "^1.23"
+    },
+    "autoload":{
+    "psr-4":{"Store\\":"src/"}
+}
+}
